@@ -1,0 +1,53 @@
+% !TeX program = LuaLaTeX
+% !TeX encoding = UTF-8
+
+\documentclass{article}
+
+% \pagestyle{empty}
+\usepackage{luatexja}
+\usepackage{luatexja-ruby}
+\usepackage{luatexja-fontspec}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{float}
+\usepackage[yyyymmdd]{datetime}
+\usepackage{indentfirst}
+\usepackage{tipa}  % for \textsubdot
+\usepackage[hidelinks]{hyperref}
+
+\renewcommand{\dateseparator}{.}
+
+\setmainjfont{FandolSong}
+\newjfontfamily\gothic{IPAexGothic}
+\newjfontfamily\mincho{IPAexMincho}
+\newjfontfamily\songti{FandolSong}
+
+% \ltjsetruby{size=0.6}
+% \ltjsetruby{fontcmd=\gtfamily}
+% \ltjsetruby{mode=00}
+
+\title{标题}
+\author{作者}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\section{第一章的标题}
+
+第一章的内容。
+
+这一句话使用了\ruby{注音}{ruby}：他是一个\ruby{绅士}{变态}。
+
+这一个单词\footnote{单词的注释}需要注释。
+
+这一个\textsubdot{单}\textsubdot{词}需要加着重号。
+
+中文和{\mincho \ruby{日|本|語}{に|ほん|ご}}可以混排。
+
+\section{第二章的标题}
+
+第二章的内容。
+
+\end{document}
