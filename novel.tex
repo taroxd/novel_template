@@ -7,13 +7,15 @@
 \usepackage{luatexja}
 \usepackage{luatexja-ruby}
 \usepackage{luatexja-fontspec}
-\usepackage[margin=0.5in]{geometry}
+% \usepackage[margin=0.5in]{geometry}
 \usepackage{float}
 \usepackage[yyyymmdd]{datetime}
 \usepackage{indentfirst}
 \usepackage{tipa}  % for \textsubdot
+\usepackage[perpage]{footmisc}
 \usepackage[hidelinks]{hyperref}
 
+\renewcommand{\abstractname}{简介}
 \renewcommand{\dateseparator}{.}
 
 \setmainjfont{FandolSong}
@@ -31,6 +33,11 @@
 \begin{document}
 
 \maketitle
+
+\begin{abstract}
+简介内容
+\end{abstract}
+
 \tableofcontents
 \newpage
 
