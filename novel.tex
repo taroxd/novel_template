@@ -7,7 +7,7 @@
 \usepackage{luatexja}
 \usepackage{luatexja-ruby}
 \usepackage{luatexja-fontspec}
-% \usepackage[margin=0.5in]{geometry}
+\usepackage[a5paper]{geometry}
 \usepackage{float}
 \usepackage{setspace}
 \usepackage{newunicodechar}
@@ -20,13 +20,12 @@
 \renewcommand{\abstractname}{简介}
 \renewcommand{\dateseparator}{.}
 
-\defaultfontfeatures{Ligatures=TeX} % for 2 em dash
 \setmainjfont[BoldFont=SimHei,ItalicFont=SimKai]{SimSun}
 \newjfontfamily\gothic{IPAexGothic}
 \newjfontfamily\mincho{IPAexMincho}
 \newjfontfamily\songti{SimSun}
 
-\newunicodechar{—}{---}
+\newunicodechar{—}{\rule[0.7ex]{1em}{0.3pt}}  % em dash. Comment out if dash is handled correctly by font
 
 % \ltjsetruby{size=0.6}
 % \ltjsetruby{fontcmd=\gtfamily}
