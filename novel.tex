@@ -23,14 +23,12 @@
 \setmainjfont[
     BoldFont=SimHei,
     ItalicFont=SimKai,
-    AltFont={
-        {Range="2014, Font=STSong} % em dash
-    }
 ]{SimSun}
 \newjfontfamily\gothic{IPAexGothic}
 \newjfontfamily\mincho{IPAexMincho}
 \newjfontfamily\songti{SimSun}
 
+\newunicodechar{—}{{\jfontspec{STSong} \ltjsetparameter{yjabaselineshift=-0.04em} —}}
 % \newunicodechar{—}{\rule[0.7ex]{1em}{0.3pt}}  % em dash. Uncomment out if dash is handled incorrectly by font
 
 % \ltjsetruby{size=0.6}
