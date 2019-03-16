@@ -10,6 +10,7 @@
 % \usepackage[margin=0.5in]{geometry}
 \usepackage{float}
 \usepackage{setspace}
+\usepackage{newunicodechar}
 \usepackage[yyyymmdd]{datetime}
 \usepackage{indentfirst}
 \usepackage{tipa}  % for \textsubdot
@@ -19,10 +20,13 @@
 \renewcommand{\abstractname}{简介}
 \renewcommand{\dateseparator}{.}
 
+\defaultfontfeatures{Ligatures=TeX} % for 2 em dash
 \setmainjfont[BoldFont=SimHei,ItalicFont=SimKai]{SimSun}
 \newjfontfamily\gothic{IPAexGothic}
 \newjfontfamily\mincho{IPAexMincho}
 \newjfontfamily\songti{SimSun}
+
+\newunicodechar{—}{---}
 
 % \ltjsetruby{size=0.6}
 % \ltjsetruby{fontcmd=\gtfamily}
