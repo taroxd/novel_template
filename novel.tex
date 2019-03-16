@@ -20,12 +20,18 @@
 \renewcommand{\abstractname}{简介}
 \renewcommand{\dateseparator}{.}
 
-\setmainjfont[BoldFont=SimHei,ItalicFont=SimKai]{SimSun}
+\setmainjfont[
+    BoldFont=SimHei,
+    ItalicFont=SimKai,
+    AltFont={
+        {Range="2014, Font=STSong} % em dash
+    }
+]{SimSun}
 \newjfontfamily\gothic{IPAexGothic}
 \newjfontfamily\mincho{IPAexMincho}
 \newjfontfamily\songti{SimSun}
 
-\newunicodechar{—}{\rule[0.7ex]{1em}{0.3pt}}  % em dash. Comment out if dash is handled correctly by font
+% \newunicodechar{—}{\rule[0.7ex]{1em}{0.3pt}}  % em dash. Uncomment out if dash is handled incorrectly by font
 
 % \ltjsetruby{size=0.6}
 % \ltjsetruby{fontcmd=\gtfamily}
