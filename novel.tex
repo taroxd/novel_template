@@ -6,7 +6,8 @@
 % \pagestyle{empty}
 \usepackage{luatexja}
 \usepackage{luatexja-ruby}
-\usepackage{luatexja-fontspec}
+\usepackage[no-math]{luatexja-fontspec}
+\usepackage[ZhongYi]{luatexja-zhfonts}
 \usepackage[a5paper]{geometry}
 \usepackage{float}
 \usepackage{setspace}
@@ -20,13 +21,8 @@
 \renewcommand{\abstractname}{简介}
 \renewcommand{\dateseparator}{.}
 
-\setmainjfont[
-    BoldFont=SimHei,
-    ItalicFont=SimKai,
-]{SimSun}
 \newjfontfamily\gothic{IPAexGothic}
 \newjfontfamily\mincho{IPAexMincho}
-\newjfontfamily\songti{SimSun}
 
 \newunicodechar{—}{{\jfontspec{STSong} \ltjsetparameter{yjabaselineshift=-0.04em} —}}
 % \newunicodechar{—}{\rule[0.7ex]{1em}{0.3pt}}  % em dash. Uncomment out if dash is handled incorrectly by font
