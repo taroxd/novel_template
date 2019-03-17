@@ -21,11 +21,10 @@
 \renewcommand{\abstractname}{简介}
 \renewcommand{\dateseparator}{.}
 
-\newjfontfamily\gothic{IPAexGothic}
-\newjfontfamily\mincho{IPAexMincho}
-
-\newunicodechar{—}{{\jfontspec{STSong} \ltjsetparameter{yjabaselineshift=-0.04em} —}}
-% \newunicodechar{—}{\rule[0.7ex]{1em}{0.3pt}}  % em dash. Uncomment out if dash is handled incorrectly by font
+% 思源黑体
+\newjfontfamily\jpfont{SourceHanSansJP-Normal}
+% 方正兰亭黑系列
+\setmainjfont[BoldFont=FZLTZHK--GBK1-0]{FZLTXIHK--GBK1-0}
 
 % \ltjsetruby{size=0.6}
 % \ltjsetruby{fontcmd=\gtfamily}
@@ -57,7 +56,7 @@
 
 这一个\textsubdot{单}\textsubdot{词}需要加着重号。
 
-中文和{\mincho \ruby{日|本|語}{に|ほん|ご}}可以混排。
+中文和{\jpfont \ruby{日|本|語}{に|ほん|ご}}可以混排。
 
 \section{第二章的标题}
 
