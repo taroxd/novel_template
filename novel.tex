@@ -17,6 +17,7 @@
 \usepackage{tipa}  % for \textsubdot
 \usepackage[perpage]{footmisc}
 \usepackage[unicode,hidelinks]{hyperref}
+\usepackage{graphicx}
 
 \renewcommand{\abstractname}{简介}
 \renewcommand{\dateseparator}{.}
@@ -32,6 +33,16 @@
   YokoFeatures={JFM=prop}
 ]{FZLTXIHK--GBK1-0}
 \renewcommand{\familydefault}{\sfdefault}
+
+\renewcommand{\contentsname}{目录}
+\newcommand*{\illust}[1]{
+  \begin{figure}[phtb]
+    \vspace*{\dimexpr -\paperheight*3/25 \relax}
+    \makebox[\linewidth]{
+      \includegraphics[width=\paperwidth,height=\paperheight]{#1}
+    }
+  \end{figure}
+}
 
 \ltjsetparameter{prebreakpenalty={`—, 10000}}
 
